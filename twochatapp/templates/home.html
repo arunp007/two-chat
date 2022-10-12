@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <style>
+        .nav_icon{
+            width: 110px;
+            border-radius: 150px;
+        }
+
+        .chat_icon1{
+            width: 110px;
+            height: 110px;
+            border-radius: 100px;
+        }
+
+        .chat1{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: aliceblue;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 10px;
+        }
+
+        .title1{
+            font-size: 30px;
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .chat_icon2{
+            width: 110px;
+            height: 110px;
+            border-radius: 100px;
+        }
+
+        .chat2{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: aliceblue;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 10px;
+        }
+
+        .title2{
+            font-size: 30px;
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="{% static 'images/twochat/2chat_logo.gif' %}" class="nav_icon"></a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-lg-12">
+                <a href="{% url 'chat1' %}">
+                    <div class="chat1">
+                        <img src="{% static 'images/twochat/chat.jpg' %}" class="chat_icon1"><label class="title1">Arun Pacheeri</label> 
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-lg-12">
+                <a href="{% url 'chat2' %}">
+                    <div class="chat2">
+                        <img src="{% static 'images/twochat/chat2.jpg' %}" class="chat_icon2"><label class="title2">Christina</label> 
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: black; margin-top: 100px;">
+        <div class="row">
+            <div class="col-xs-2 col-lg-2">
+                <h6 style="color: gray; padding-top: 30px;">ABOUT</h6>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Contact Us</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">About Us</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Career</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Corporate Information</a></label><br>
+            </div>
+    
+            <div class="col-xs-2 col-lg-2">
+                <h6 style="color: gray; padding-top: 30px;">HELP</h6>
+                <label for=""><a href="" style="text-decoration: none; color: white;">FAQ</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Report</a></label><br>
+            </div>
+    
+            <div class="col-xs-2 col-lg-2">
+                <h6 style="color: gray; padding-top: 30px;">POLICY</h6>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Return Policy</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Terms Of Use</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Security</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Privacy</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Sitemap</a></label><br>
+            </div>
+            
+            <div class="col-xs-1 col-lg-1">
+                <h6 style="color: gray; padding-top: 30px;">SOCIAL</h6>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Instagram</a></label><br> 
+                <label for=""><a href="" style="text-decoration: none; color: white;">Facebook</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Twitter</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Youtube</a></label><br>
+            </div>
+    
+            <div class="col-xs-2 col-lg-2">
+                <h6 style="color: gray; padding-top: 30px;">Mail Us</h6>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Two Chat Internet Private Limited,</a></label><br> 
+                <label for=""><a href="" style="text-decoration: none; color: white;">Buildings Alyssa, Begonia &</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Clove Embassy Tech Village,</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Outer Ring Road, Devarabeesanahalli Village,</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Bengaluru, 560103,</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Karnataka, India</a></label><br>
+            </div>
+    
+            <div class="col-xs-3 col-lg-3">
+                <h6 style="color: gray; padding-top: 30px;">Registered Address</h6>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Two Chat Internet Private Limited,</a></label><br> 
+                <label for=""><a href="" style="text-decoration: none; color: white;">Buildings Alyssa, Begonia &</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Clove Embassy Tech Village,</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Outer Ring Road, Devarabeesanahalli Village,</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Bengaluru, 560103,</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Karnataka, India</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">CIN : U51109KA2012PTC066107</a></label><br>
+                <label for=""><a href="" style="text-decoration: none; color: white;">Telephone: 044-45614700</a></label><br>
+            </div>
+    
+            <div class="col-xs-12 col-lg-12" style="border-top: 2px solid gray; padding-top: 30px;">
+            </div>
+    
+            <div class="col-xs-2 col-lg-2">
+            </div>
+    
+            <div class="col-xs-2 col-lg-2">
+            </div>
+    
+            <div class="col-xs-2 col-lg-2">
+            </div>
+    
+            <div class="col-xs-3 col-lg-3">
+                <label for=""><a href="" style="color: white; text-decoration: none;">© 2007-2022 2chat.com</a></label>
+            </div>
+    
+            <div class="col-xs-3 col-lg-3">
+                <label for=""><a href="" style="text-decoration: none;"><img src="{% static 'images/twochat/payments.svg' %}" width="300px"></a></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
